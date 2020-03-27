@@ -23,7 +23,6 @@
     "vuepress-theme-medium"
   ],
   "scripts": {
-    "test": "npm run lint && jest",
     "lint": "disable",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
