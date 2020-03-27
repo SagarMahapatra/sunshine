@@ -1,0 +1,21 @@
+{
+  "name": "sunshine",
+  "version": "1.0.0",
+  "description": "Sunshine...",
+  "main": "index.js",
+  "author": "sagarmahapatra1",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "dependencies": {
+    "install": "^0.12.2",
+    "npm": "^6.8.0",
+    "vuetify": "^1.5.4"
+  },
+  "devDependencies": {
+    "vuepress": "^0.10.0"
+  }
+}
