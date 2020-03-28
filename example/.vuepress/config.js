@@ -2,6 +2,8 @@ module.exports = {
   title: "Sunshine",
   description: "This is a blog example built by VuePress",
   theme: require.resolve("../../"),
+  base: '/sunshine/',
+  dest: 'public',
   themeConfig: {
     summary: true,
     nav: [{
