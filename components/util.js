@@ -3,25 +3,25 @@ export const extRE = /\.(md|html)$/
 export const endingSlashRE = /\/$/
 export const outboundRE = /^(https?:|mailto:|tel:)/
 
-export function normalize (path) {
+export function normalize(path) {
   return decodeURI(path)
     .replace(hashRE, '')
     .replace(extRE, '')
 }
 
-export function isExternal (path) {
+export function isExternal(path) {
   return outboundRE.test(path)
 }
 
-export function isMailto (path) {
+export function isMailto(path) {
   return /^mailto:/.test(path)
 }
 
-export function isTel (path) {
+export function isTel(path) {
   return /^tel:/.test(path)
 }
 
-export function ensureExt (path) {
+export function ensureExt(path) {
   if (isExternal(path)) {
     return path
   }
@@ -34,6 +34,7 @@ export function ensureExt (path) {
   }
   return normalized + '.html' + hash
 }
+
 
 /*
  * find parent vm by ref
