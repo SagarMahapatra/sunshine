@@ -8,6 +8,7 @@ pages:
   script:
   - yarn install
   - yarn run example:build
+  - yarn run example:publish
 
   artifacts:
     paths:
